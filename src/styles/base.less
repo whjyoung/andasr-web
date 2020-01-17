@@ -1,0 +1,35 @@
+// flex -横向
+.flex-row(@justify-content: center, @align-items: center) {
+  display: flex;
+  flex-direction: row;
+  justify-content: @justify-content;
+  align-items: @align-items;
+}
+
+//flex-纵向
+.flex-column(@justify-content: center, @align-items: center) {
+  display: flex;
+  flex-direction: column;
+  justify-content: @justify-content;
+  align-items: @align-items;
+}
+
+//border通用下边框
+.border-bottom(@height: 2px, @color: #00a0e9) {
+  border-bottom: @height solid @color;
+}
+
+//公用的标题红线
+.line() {
+  width: 16px;
+  height: 4px;
+  background: #ED0282;
+}
+
+//文本只显示两行
+.two-clamp() {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+}
